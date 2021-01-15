@@ -78,7 +78,7 @@ const FundsTransferHistory = () => {
                 const res = await API.get("/transfer", {
                     params: {
                         page,
-                        perPage: 1,
+                        perPage: 10,
                     },
                 });
                 if (res.status === 200) {
